@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <header class="date"></header>
+    <div class="content">
+      <div class="waiting" texto="En espera">
+
+      </div>
+      <div class="paused" texto="Pausado"></div>
+      <div class="finished" texto="Finalizado"></div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Guarda una fecha
+            </h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <input type="text" name="name" placeholder="Nombre" id="name"></input>
+            <input type="text" name="surname" placeholder="Apellidos" id="surname"></input>
+            <input type="number" name="age" placeholder="Edad" id="age"></input>
+            <input type="text" id="datepicker" name="date" placeholder="Fecha" id="date"></input>
+              <textarea placeholder="Comentario" id="textplain"></textarea>
+          </main>
+          <footer class="modal__footer">
+            <button class="modal__btn modal__btn-primary save">Guardar</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <button class="add">+</button>
+  </body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/main.js"></script>
+</html>
